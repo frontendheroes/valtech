@@ -1,0 +1,16 @@
+var favNum = [
+            {name : "Archies ", favNume:12 },
+            {name : "Anmol ", favNume: 2},
+            {name : "Sharan", favNume: 4},
+            {name : "Sneha ", favNume: 8},
+            {name : "Harshitha", favNume: 9},
+            {name : "Moulidhar", favNume: 13},
+            {name : "Jai Kumar", favNume: 6},
+            {name : "Pavan", favNume: 5},
+            {name : "Wasil", favNume: 7},
+            {name : "Saniya", favNume: 16},
+            {name : "Himani", favNume: 11},
+            {name : "Anirudh", favNume: 17},
+            {name : "Mihir", favNume: 22},
+            {name : "Vijay", favNume: 1}
+        ];
