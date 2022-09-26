@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Scope</title>
+    <script>
+        /* 
+        console.log( i in window );
+        for(var i = 0; i < 100; i++){
+            console.log(i);
+        };
+        console.log("value of i out of loop ",i); 
+        */
+       var hero = {
+        title : "Batman",
+        power : 7
+       };
+
+       function checkPower(){
+        if(hero.power > 5){
+            let tempTitle = hero.title;
+            hero.title = tempTitle+" is strong";
+        }
+        console.log(tempTitle);
+       };
+       checkPower();
+       console.log(hero.title);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

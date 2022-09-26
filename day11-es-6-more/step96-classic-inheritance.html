@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       /*  
+        function Hero(htitle, hfname, hlname){
+            this.title = htitle;
+            this.firstname = hfname;
+            this.lastname = hlname;
+        }
+        Hero.prototype.fullname = function(){
+            return this.firstname+" "+this.lastname;
+        } 
+        */
+        class Person{
+            constructor(hname){
+                this.name = hname;
+            }
+            canWalk(){
+                return "I can walk";
+            }
+           
+        }
+        class Hero extends Person{
+            title = "default title";
+            firstname = "default firstname";
+            lastname = "default lastname";
+            #mission = "my secret mission";
+            static version = 1001;
+            constructor(htitle, hfname, hlname, hname){
+                super(hname);
+                this.title = htitle;
+                this.firstname = hfname;
+                this.lastname = hlname;
+            } 
+            fullname(){
+                return this.firstname+" "+this.lastname;
+            }
+            static saypower(){
+                return 7
+            }
+            get mission(){
+                return this.#mission;
+            }
+            set mission(nmission){
+                this.#mission = nmission;
+            }
+            sayname(){
+                return this.name;
+            }
+        };
+
+        var hero = new Hero('Ironman', 'tony', 'stark', 'first avenger');
+        console.log( hero.title );
+        console.log("Accessing static property on instance ", hero.version );
+        console.log("Accessing static property on class ", Hero.version );
+        console.log("Accessing static property on class ", Hero.saypower() );
+        console.log( hero.mission );// get
+        hero.mission = "Save the world"; // set
+        console.log( hero.mission ); // get
+        console.log( hero.canWalk() ); 
+        console.log( hero.fullname() ); 
+        console.log( hero.sayname() ); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

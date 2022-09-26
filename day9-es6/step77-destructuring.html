@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+    <script>
+        var hero = {
+            title : "Batman",
+            firstname : "Bruce",
+            lastname : "Wayne",
+            city : "Gotham",
+            power : 7
+        };
+        /* 
+        var tempHero = hero;
+        console.log(tempHero.title);        
+        tempHero.title = "joker";        
+        console.log(tempHero.title);// Joker
+        console.log(hero.title);// ??? 
+        */
+
+     /*   var herotitle = hero.title;
+       var herocity = hero.city;
+       var herofirstname = hero.firstname;
+       var herolastname = hero.lastname;
+       var heropower = hero.power; */
+
+      /*  
+      var  herotitle = hero.title,
+            herocity = hero.city,
+            herofirstname = hero.firstname,
+            herolastname = hero.lastname,
+            heropower = hero.power;
+        */
+      // var { title : herotitle, power : heropower, city : herocity, firstname : herofirstname, lastname : herolastname} = hero;
+      // var { title : title, power : power, city : city, firstname : firstname, lastname : lastname} = hero;
+      // var { title, power, city, firstname, lastname} = hero;
+      /*  
+        var { title, movieCount = 4 } = hero;
+        console.log(title);
+        title = "Joker";
+        console.log(title);
+        console.log(hero.title);
+        console.log(movieCount * 2); 
+      */
+/* 
+        function getFavHeroes(){
+            return ['Batman', 'Superman', 'Flash', 'Aquaman']
+        };
+
+        var [firstHero, secondHero, thirdHero, fourthHero] = getFavHeroes();
+
+        console.log(secondHero.toUpperCase());// 
+        console.log(thirdHero.toUpperCase().length);// 
+ */
+       /*  
+        var allVals = { ...hero }
+        console.log( allVals.title );
+        allVals.title = "Joker";
+        console.log( allVals.title );
+        console.log( hero.title ); 
+        */
+
+        var allVals = JSON.parse( JSON.stringify(hero) );
+        console.log( allVals.title );
+        allVals.title = "Joker";
+        console.log( allVals.title );
+        console.log( hero.title ); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

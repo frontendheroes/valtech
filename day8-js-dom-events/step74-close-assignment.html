@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 400px;
+            overflow: auto;
+            background-color: cadetblue;
+            border: 1px solid transparent;
+            margin: 100px auto;
+        }
+        .container .box{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(191, 224, 225);
+            border: 1px solid transparent;
+            float: left;
+            margin: 10px;
+        }
+        .container .box span{
+            width: 20px;
+            height: 20px;
+            background-color: rgb(19, 19, 19);
+            border: 1px solid transparent;
+            float: right;
+            margin: 5px;
+            color : white;
+            text-align: center;
+            vertical-align: 20px;
+        }
+        .container .box span:hover{
+            background-color: rgb(250, 7, 7);
+            cursor: pointer;
+        }
+    </style>
+    <script src="lib/jquery.js"></script>
+    <script>
+        var count = 0;
+        var si = null;
+        function closeHandler(evt){
+            if(evt.target.tagName === "SPAN"){
+                // document.getElementsByClassName("container")[0].removeChild(event.target.parentElement);
+                $(evt.target.parentElement).hide(500);
+                // $(evt.target.parentElement).fadeOut(500);
+                
+            }
+        }
+        function init(){
+            document.getElementsByClassName("container")[0].addEventListener("click", closeHandler);
+            si = setInterval(function(){
+                document.getElementsByClassName("container")[0].innerHTML += "<div class='box'><span>X</span></div>"
+                count++;
+                if(count >= 20){
+                    clearInterval(si);
+                }
+            },50)
+        }
+        document.addEventListener("DOMContentLoaded", init);
+    </script>
+</head>
+<body>
+    <div class="container">
+        welcome to <span>your</span> life
+    </div>
+</body>
+</html>

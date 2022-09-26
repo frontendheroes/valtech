@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 200px;
+            background-color: dimgray;
+        }
+    </style>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("readystatechange", xhrHandler);
+        function xhrHandler(evt){
+            if(evt.target.readyState === 4){
+                // console.log(JSON.parse(evt.target.responseText).root.participant.length);
+                JSON.parse(evt.target.responseText).root.participant.forEach(val => {
+                    console.log(val.firstname);
+                })
+            }
+        }
+        function clickHandler(){
+            xhr.open("get", "data.json", true);
+            xhr.send();
+        }
+        function init(){
+            document.querySelector("button").addEventListener("click", clickHandler)
+        }
+        document.addEventListener("DOMContentLoaded", init);
+    </script>
+</head>
+<body>
+    <button>Get Data</button>
+    <div class="container"></div>
+</body>
+</html>

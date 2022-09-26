@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+        import Hero from "./modules/hero.js";
+        
+        var hero = new Hero('Ironman', 'tony', 'stark', 'first avenger');
+        console.log( hero.title );
+        console.log("Accessing static property on instance ", hero.version );
+        console.log("Accessing static property on class ", Hero.version );
+        console.log("Accessing static property on class ", Hero.saypower() );
+        console.log( hero.mission );// get
+        hero.mission = "Save the world"; // set
+        console.log( hero.mission ); // get
+        console.log( hero.canWalk() ); 
+        console.log( hero.fullname() ); 
+        console.log( hero.sayname() ); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
