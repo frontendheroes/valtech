@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 400px;
+            background-color: darkblue;
+            margin: 50px auto;
+        }
+        .container .box{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            margin: 10px;
+            float : left;
+        }
+    </style>
+    <script src="lib/jquery-3.6.1.js"></script>
+    <script>
+        $(function(){
+           /*  
+            $(".box").click(function(){
+                alert("you clicked the button")
+            }) 
+            */
+           /*  
+            $(".box").one("click", function(){
+                alert("you clicked it ")
+            }) 
+            */
+           // $(".box").on("click",clickHandler );
+          /*  
+          $(".box").click(function(){
+             $(".container").append("<div class='box'></div>")
+           }) 
+           */
+          $(".container").on("click", ".box", function(){
+            $(".container").append("<div class='box'></div>")
+          }) 
+
+        });
+        // function clickHandler(){
+        //     alert("you clicked the button");
+        //     $(".box").off("click",clickHandler);
+
+        // }
+    </script>
+</head>
+<body>
+   <!--  <button class="box">Click Me</button> -->
+   <div class="container">
+        <div class="box"></div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/jquery-3.6.1.js"></script>
+    <script>
+        $(()=>{
+           // $("ul").css("border","2px solid red");
+           // $("li.box1").css("border","2px solid red");
+           // $("#player").css("border","2px solid red");
+           // $("ul li:nth-child(1), ul li:nth-child(2)").css("border","2px solid red");
+           // $("li:nth-child(1), li:nth-child(2)").css("border","2px solid red");
+           // $("ul ~ p").css("border", "2px solid red")
+           // $("li:first").css("border", "2px solid red");
+           // $("li:last").css("border", "2px solid red");
+           // $("li:odd").css("border", "2px solid red");
+           // $("li:even").css("border", "2px solid red");
+           // $("li:eq(0)").css("border", "2px solid red");
+           // $("li:gt(3)").css("border", "2px solid red");
+           // $("li:lt(3)").css("border", "2px solid red");
+           // $(":header").css("border", "2px solid red");
+           // $("li:contains('new arrival')").css("border", "2px solid red");
+           // $("ul:not(:has(.x))").css("border", "2px solid red");
+           alert( $("p:hidden").text() );
+        })
+    </script>
+</head>
+<body>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2 new arrival</li>
+        <li class="x">List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2 new arrival</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+    <ol>
+        <li class="box1">Ordered List </li>
+        <li class="box2">Ordered List</li>
+        <li class="box3">Ordered List last item</li>
+        <li class="box4">Ordered List</li>
+        <li class="box5 y">Ordered List</li>
+    </ol>
+    <p style="display : none">
+        Hidden paragraph
+    </p>
+    <h1>
+        Heading 1
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum qui quasi ad vitae omnis eos, consectetur doloribus, numquam, deleniti et repudiandae natus porro aut aliquam. Voluptatum dolores dicta beatae laudantium.
+    </p>
+    <h2>
+        Heading 2
+    </h2>
+    <p id="player">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quae voluptatum ad accusantium autem hic! Aperiam corrupti optio ad expedita eos ipsa provident totam ut, ullam, nobis laudantium minima. Quidem?
+    </p>
+    <h3>
+        Heading 3
+    </h3>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/jquery-3.6.1.js"></script>
+    <style>
+        div{
+            padding: 10px;
+            background-color: darkorange;
+            margin: 10px auto;
+            width: 600px;
+            border-radius: 50px;
+        }
+        div p{
+            padding: 10px;
+            background-color: aqua;
+            margin: 10px auto;
+            width: 600px;
+        }
+    </style>
+    <script>
+        $(()=>{
+           //  $("p.c").wrap("<div/>")
+           // $("p.box").wrapAll("<div/>")
+           // $("p").wrap("<div/>")
+           // $("p.b").wrapInner("<div/>")
+           $("li").unwrap();
+        })
+    </script>
+</head>
+<body>
+    <p class="box a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia fugiat culpa eligendi sed, voluptates cumque perferendis necessitatibus cupiditate optio ea natus totam ut autem quae vero ipsa. Illo, natus!</p>
+    <p class="box b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia fugiat culpa eligendi sed, voluptates cumque perferendis necessitatibus cupiditate optio ea natus totam ut autem quae vero ipsa. Illo, natus!</p>
+    <p class="box c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia fugiat culpa eligendi sed, voluptates cumque perferendis necessitatibus cupiditate optio ea natus totam ut autem quae vero ipsa. Illo, natus!</p>
+    <p class="box d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia fugiat culpa eligendi sed, voluptates cumque perferendis necessitatibus cupiditate optio ea natus totam ut autem quae vero ipsa. Illo, natus!</p>
+    <p class="box e">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia fugiat culpa eligendi sed, voluptates cumque perferendis necessitatibus cupiditate optio ea natus totam ut autem quae vero ipsa. Illo, natus!</p>
+    <ol>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ol>
+</body>
+</html>

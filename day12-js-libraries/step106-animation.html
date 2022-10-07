@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/jquery-3.6.1.js"></script>
+    <style>
+        body{
+            width: 200px;
+            margin: auto;
+        }
+        .container{
+            width: 200px;
+            height: 100px;
+            background-color: darkorange;
+            margin : auto;
+        }
+        button{
+            display: block;
+            margin:10px auto;
+            width: 200px;
+
+        }
+    </style>
+    <script>
+        $(function(){
+            $("button").eq(0).on("click",function(){
+                $(".container").show();
+            })
+            $("button").eq(1).on("click",function(){
+                $(".container").hide();
+            })
+            $("button").eq(2).on("click",function(){
+                $(".container").show(1000);
+            })
+            $("button").eq(3).on("click",function(){
+                $(".container").hide(1000);
+            })
+            $("button").eq(4).on("click",function(){
+                $(".container").toggle(1000);
+            })
+            $("button").eq(5).on("click",function(){
+                $(".container").fadeIn(1000);
+            })
+            $("button").eq(6).on("click",function(){
+                $(".container").fadeOut(1000);
+            })
+            $("button").eq(7).on("click",function(){
+                $(".container").fadeTo(1000,0.5);
+            })
+            $("button").eq(8).on("click",function(){
+                $(".container").fadeTo(1000,1);
+            })
+            $("button").eq(9).on("click",function(){
+                $(".container").slideUp(1000);
+            })
+            $("button").eq(10).on("click",function(){
+                $(".container").slideDown(1000);
+            })
+            $("button").eq(11).on("click",function(){
+                $(".container").slideToggle(1000);
+            })
+        })
+    </script>
+</head>
+<body>
+    <button>Show</button>
+    <button>Hide</button>
+    <button>Show in 1 sec</button>
+    <button>Hide in 1 sec</button>
+    <button>Toggle</button>
+    <button>Fade In</button>
+    <button>Fade Out</button>
+    <button>Fade To 0.5</button>
+    <button>Fade Back To 1</button>
+    <button>Slide Up</button>
+    <button>Slide Down</button>
+    <button>Slide Toggle</button>
+    <div class="container"></div>
+</body>
+</html>
