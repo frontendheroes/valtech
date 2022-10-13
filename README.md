@@ -8,6 +8,6 @@ frontend-training
 
 # Quizz
 <hr/>
-<a href="https://forms.gle/mwywwWjjnKPoDooG8"> Project Selection Link </a>
+<a href="https://forms.gle/JgojNu9gWDsxhX6c7"> Project Selection Link </a>
 
 
