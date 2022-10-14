@@ -1,0 +1,56 @@
+[
+    {
+      "hero": "Spider-Man",
+      "name": "Peter Benjamin Parker",
+      "price" : 100,
+      "instock" : true
+    },
+    {
+      "hero": "CAPTAIN MARVEL",
+      "name": "Carol Danvers",
+      "price" : 120,
+      "instock" : true
+    },
+    {
+      "hero": "HULK", 
+      "name": "Robert Bruce Banner",
+      "price" : 150,
+      "instock" : true
+    },
+    {
+      "hero": "Black Widow", 
+      "name": "Natalia 'Natasha' Alianovna Romanova",
+      "price" : 180,
+      "instock" : true
+    },
+    {
+      "hero": "Daredevil", 
+      "name": "Matthew Michael Murdock",
+      "price" : 80,
+      "instock" : true
+    },
+    {
+      "hero": "Wolverine", 
+      "name": "James Howlett",
+      "price" : 125,
+      "instock" : true
+    },
+    {
+      "hero": "Captain America", 
+      "name": "Steven Rogers",
+      "price" : 50,
+      "instock" : true
+    },
+    {
+      "hero": "Iron Man", 
+      "name": "Anthony Edward 'Tony' Stark",
+      "price" : 100,
+      "instock" : true
+    },
+    {
+      "hero": "THOR", 
+      "name": "Thor Odinson",
+      "price" : 200,
+      "instock" : true
+    }
+  ]
