@@ -10,4 +10,5 @@ frontend-training
 <hr/>
 <a href="https://forms.gle/JgojNu9gWDsxhX6c7"> Project Selection Link </a>
 
-
+<hr/>
+<a href="https://forms.gle/aK75fHMygQGfAb9K7"> React with Redux Link </a>
