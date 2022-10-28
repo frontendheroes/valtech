@@ -15,3 +15,6 @@ frontend-training
 
 <hr/>
 <a href="https://forms.gle/ufAXb5NUPofMURkg8"> NodeJS Assessment Link </a>
+
+<hr/>
+<a href="https://forms.gle/ZgucX3teGQAi7FPfA"> React Native Assessment Link </a>
