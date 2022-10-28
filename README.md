@@ -12,3 +12,6 @@ frontend-training
 
 <hr/>
 <a href="https://forms.gle/aK75fHMygQGfAb9K7"> React with Redux Link </a>
+
+<hr/>
+<a href="https://forms.gle/ufAXb5NUPofMURkg8"> NodeJS Assessment Link </a>
