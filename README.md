@@ -20,7 +20,5 @@ frontend-training
 <a href="https://forms.gle/ZgucX3teGQAi7FPfA"> React Native Assessment Link </a>
 
 <hr/>
-
-### Finally
-
-<a href="https://forms.gle/ymnzBRq9giRckVUcA"> Course Feedback Link </a>
+<a href="https://forms.gle/is4mngQdF6kP5LgF9"> VueJS Assessment Link </a>
+<hr/>
